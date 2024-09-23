@@ -1,0 +1,264 @@
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.header-text p {
+    font-size: 1.5em;
+    /* color: #cc0000 !important; */
+    -webkit-text-fill-color: #cc0000;
+    /* font-size: 35px; */
+    -webkit-text-stroke-width: 0.5px;
+    /* -webkit-text-stroke-color: #fff; */
+}
+
+main {
+    padding: 20px 0;
+    width: 45%;
+}
+
+.claim-form {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.claim-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* .form-group label {
+    display: block;
+    margin-bottom: 5px;
+} */
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 2px 5px 5px -5px rgba(0, 0, 0, 0.38);
+    
+}
+
+.form-group textarea {
+    /* height: 100px; */
+    resize: vertical;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+}
+.checkbox-group input[type="checkbox"]:checked::after {
+    content: "✔";  /* Display a checkmark or 'Yes' text */
+    color: white;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    font-size: 12px;
+}
+
+.checkbox-group label {
+    margin-right: 10px;
+}
+
+.claim-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.claim-form button:hover {
+    background-color: #0056b3;
+}
+
+.symptoms-section {
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+}
+
+.symptoms-section h2 {
+    /* background-color: white; */
+    padding: 5px;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.symptoms-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.symptoms-container ul {
+    list-style: disc;
+    /* margin-left: 20px; */
+    text-align: justify;
+    margin-top: 0px;
+}
+
+.symptoms-container li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.additional-info {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.additional-info h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+.toggle-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.toggle-group input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #ccc;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-group input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+.toggle-group input[type="checkbox"]:checked {
+    background-color: #007bff;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.toggle-group input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+
+.dropdown-group {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.dropdown-group select {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 2px 5px 5px -5px rgba(0, 0, 0, 0.38);
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
